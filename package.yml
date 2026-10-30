@@ -1,0 +1,18 @@
+package: community.lazycat.app.splayer
+version: 3.0.0
+name: SPlayer
+description: Cross-platform music player with lyrics, cloud music drive and local library management.
+min_os_version: "1.5.0"
+homepage: https://github.com/imsyy/SPlayer
+author: imsyy
+license: AGPL-3.0
+permissions:
+  required:
+    - net.internet
+locales:
+  zh:
+    name: SPlayer
+    description: 简约的在线音乐播放器，支持歌词显示、音乐云盘、本地音乐管理与流媒体播放。
+  en:
+    name: SPlayer
+    description: A minimalist music player with lyrics display, cloud music drive, local library management and streaming.

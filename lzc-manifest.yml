@@ -1,0 +1,17 @@
+application:
+  subdomain: splayer
+  multi_instance: false
+  upstreams:
+    - location: /
+      backend: http://splayer:25884/
+services:
+  splayer:
+    # upstream: ghcr.io/imsyy/splayer:v3.0.0
+    image: docker.1ms.run/imsyy/splayer:v3.0.0
+    environment:
+      - TZ=Asia/Shanghai
+usage: |
+  SPlayer 在线音乐播放器。首次进入即可使用，无需登录；在线音源与歌词功能取决于外部服务的可用性。
+  播放器偏好保存在浏览器本地；应用本身无独立用户体系与持久数据卷。
+  入口保留懒猫登录保护；无公开路径、无文件选择器拦截。
+  未验证实机播放、音源可用性或歌词显示。
